@@ -1,0 +1,31 @@
+.advertisement {
+    width: 100%;
+    height: 380px;
+    display: flex;
+  }
+  
+  .advertisement__premium {
+    background: #F4F4F0;
+    flex: 1;
+  }
+  
+  .advertisement__premium_block {
+    margin-left: 81px;
+    margin-top: 56px;
+    width: 412px;
+    height: 294px;
+  }
+  
+  .advertisement__img {
+    flex: 1;
+  }
+  
+  .advertisement__premium_block h1{
+    font-size: 40px;
+    color: #056551;
+  }
+  
+  .advertisement__premium_block p{
+    font-size: 18px;
+    color: #666666;
+  }

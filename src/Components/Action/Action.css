@@ -1,0 +1,19 @@
+.action{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.line{
+    background: #B2B2B2;
+    width: 1px;
+    height: 100%;
+ }
+
+ .action__item_chat{
+ }
+
+ .action__item_cart{
+   
+ }

@@ -1,0 +1,28 @@
+.banner{
+    display: flex;
+    height: 321px;
+}
+
+.banner_block{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+
+}
+
+.banner_block__text{
+    width: 570px;
+    background: #fdaf17;
+}
+
+.banner_block__text h1{
+    line-height: 38px;
+    margin-top: 104px;
+    margin-left: 83px;
+    font-size: 44px;
+    color: #000;
+}
+
+.banner_block__img{
+    width: 873px;
+}

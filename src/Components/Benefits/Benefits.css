@@ -1,0 +1,46 @@
+a, p, div, button, submit { 
+    border:none; 
+    margin:0; 
+    padding:0; 
+} 
+
+.benefits{
+    height: 95px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+  
+  .benefits_item{
+    display: flex;
+    align-items: center;
+  }
+
+  .benefits_item img{
+      width: 50px;
+      height: 50px;
+  }
+
+  .benefits_item_description{
+      padding-left: 20px;
+      height: 42px;
+  }
+
+  .benefits_item_description p{
+      color: #056551;
+      font-size: 14;
+      font-weight: bold; 
+  }
+
+  .benefits_item_description a{
+    color: #056551;
+    font-size: 14;
+}
+
+
+.benefits .line{
+    width: 100%;
+    height: 1px;
+    background: #E5E5E5;
+}
+  

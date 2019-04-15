@@ -1,0 +1,16 @@
+.productList {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productList__item {
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    min-height: 400px;
+    width: 305px;
+    margin-bottom: 20px;
+}
+
+

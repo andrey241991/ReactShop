@@ -1,0 +1,42 @@
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu li{
+    flex: 1;
+    display: inline;
+}
+
+.line{
+    background: #B2B2B2;
+    width: 1px;
+    height: 100%;
+ }
+
+ .menu a.active{
+    color:gold;
+ }
+
+ .menu a {
+    text-decoration: none;
+ }
+
+
+/* 
+.navigation{
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navigation li{
+    flex: 1;
+    display: inline;
+}
+
+.navigation img{
+    flex: 1; 
+}*/

@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+}
+
+.header_logo_block{
+    width: 162px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.header_search_block{
+    display: flex;
+    flex-grow: 1;
+}
+
+.header_menu_block{
+    width: 660px;
+    display: flex;
+}
+
+.header_action_block{
+    display: flex;
+    width: 130px;
+}
+
+
+.header .line{
+    background: #B2B2B2;
+    width: 1px;
+    height: 100%;
+ }
+

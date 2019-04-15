@@ -1,0 +1,31 @@
+.filter{
+    background: #f4f5f0;
+    height: 71px;
+    width: 100%;
+    max-width: 1440px;
+    
+}
+
+.filter_block{
+    height: 100%;
+    max-width: 857px;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter_block button{
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #046551;
+    width: 108px;
+    height: 30px;
+    background: #ffffff;
+    color: #046551;
+    font-size: 16px; 
+}
+
+.filter_block :first-child{
+    width: 89px;
+}

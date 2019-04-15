@@ -1,0 +1,10 @@
+.logo{
+    display: flex;
+    width: 100%;
+}
+
+.logo_title{
+   color:  #000000;
+   width: 122px;
+   height: 30px;
+}
