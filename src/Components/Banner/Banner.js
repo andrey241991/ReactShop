@@ -11,7 +11,7 @@ function Banner(){
                     <h1>New<br/>Arrivals</h1>
                 </div> 
                 <div className='banner_block__img'>
-                    <img src={img_banner} alt='60-Day Trial'/>
+                    {/* <img src={img_banner} alt='60-Day Trial'/> */}
                 </div>   
                    
              </div>

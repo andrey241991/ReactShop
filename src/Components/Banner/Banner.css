@@ -8,10 +8,12 @@
     width: 100%;
     max-width: 1440px;
 
+
 }
 
 .banner_block__text{
-    width: 570px;
+    flex: 40%;
+   /* // width: 570px; */
     background: #fdaf17;
 }
 
@@ -24,5 +26,13 @@
 }
 
 .banner_block__img{
-    width: 873px;
+    flex: 61%;
+    background-image:  url('../../img/img_test.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+/* 
+
+    background-image: 
+    width: 873px; */
 }

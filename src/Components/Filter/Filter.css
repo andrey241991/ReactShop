@@ -3,11 +3,11 @@
     height: 71px;
     width: 100%;
     max-width: 1440px;
-    
 }
 
 .filter_block{
-    height: 100%;
+    flex-wrap: wrap;
+    min-height: 100%;
     max-width: 857px;
     margin-left: 80px;
     display: flex;
@@ -16,16 +16,59 @@
 }
 
 .filter_block button{
-    font-weight: 500;
+    font-weight: 550;
     border-radius: 5px;
     border: 1px solid #046551;
     width: 108px;
     height: 30px;
     background: #ffffff;
     color: #046551;
-    font-size: 16px; 
+    font-size: 14px; 
 }
 
 .filter_block :first-child{
     width: 89px;
-}
+} 
+
+.filter_block div{
+    height: 100%;
+} 
+
+@media screen and (max-width: 1030px) {
+    .filter_block{
+        flex-wrap: wrap;
+        min-height: 100%;
+        max-width: 857px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .filter_block button{
+        font-weight: 550;
+        border-radius: 5px;
+        border: 1px solid #046551;
+        width: 80px;
+        height: 30px;
+        background: #ffffff;
+        color: #046551;
+        font-size: 12px; 
+    }
+
+    .filter_block :first-child{
+        width: 59px;
+    } 
+
+  }
+
+
+
+
+
+/* height: auto;
+min-height: 10vh; */

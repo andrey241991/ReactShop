@@ -4,6 +4,7 @@ import ProductList from '../ProductList/ProductList';
 import Banner from '../Banner/Banner';
 import Filter from '../Filter/Filter';
 import BelowFilter from '../BelowFilter/BelowFilter';
+import Pagination from '../Pagination/Pagination';
 
 class Products extends Component {
 
@@ -14,10 +15,13 @@ class Products extends Component {
             <Banner/>
             <Filter/>
                 <div className='products_block'> 
-                  <div className='below_filter__block'> 
+                  <div className='products_block__below-filter'> 
                     <BelowFilter/>
                   </div>
                   <ProductList/> 
+                  <div className='products_pagination'> 
+                    <Pagination/>
+                  </div>
                 </div>
             </div>
         </div>

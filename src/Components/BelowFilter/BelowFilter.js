@@ -12,19 +12,3 @@ const BelowFilter = () => (
 
 export default BelowFilter;
 
-// class BelowFilter extends React.Component {
-
-//     render() => {
-//     return (
-//         <section className='below_filter_block'>
-//             <p className='below_filter_block__rugs-quantity'>768 Rugs</p>
-//             <select className='below_filter_block__sort'>
-//                 <option selected value="">Sort</option>
-//             </select>
-//         </section>
-
-//     )
-// }
-// }
-
-
