@@ -7,7 +7,9 @@
 }
 
 .header_logo_block{
-    width: 162px;
+    border-right: 1px solid #B2B2B2;
+    height: 100%;
+    width: 142px;
     display: flex;
     margin-left: 20px;
 }
@@ -18,19 +20,17 @@
 }
 
 .header_menu_block{
-    width: 660px;
+    height: 100%;
+    width: 529px;
     display: flex;
+    border-right: 1px solid #B2B2B2;
+    border-left: 1px solid #B2B2B2;
 }
 
 .header_action_block{
     display: flex;
-    width: 130px;
+    width: 95px;
+    height: 100%;
 }
 
-
-.header .line{
-    background: #B2B2B2;
-    width: 1px;
-    height: 100%;
- }
 

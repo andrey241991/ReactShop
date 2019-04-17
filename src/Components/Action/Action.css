@@ -2,18 +2,30 @@
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
-.line{
-    background: #B2B2B2;
-    width: 1px;
+ .action__item_chat{
     height: 100%;
+     width: 100%;
+     flex: 1;
+     border-right: 1px solid #B2B2B2;
+     display: flex;
+     align-items: center;
+     justify-items: center;
+
  }
 
- .action__item_chat{
+ .action__item_chat img{
+     padding-left: 10px;
+ 
  }
 
  .action__item_cart{
-   
+    flex: 1;
+ }
+
+ .action__item_cart img{
+    padding-left: 10px;
  }

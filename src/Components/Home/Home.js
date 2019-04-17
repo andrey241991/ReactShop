@@ -6,14 +6,16 @@ import Advertisement from '../Advertisement/Advertisement';
 class Home extends Component {
   render() {
     return (
-        <div className='Home'>
-            <section className='app_advertisement'>
-                <Advertisement/>
-            </section>
-            <section className='app_benefits'>
-                <Benefits/>
-            </section>   
+      <div className='home'>
+        <div className='home_advertisement'>
+          <Advertisement />
         </div>
+        <div className='home_wrapper'>
+          <div className='home_wrapper__benefits'>
+            <Benefits />
+          </div>
+        </div>
+      </div>
     );
   }
 }

@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .menu li{
@@ -21,6 +22,11 @@
 
  .menu a {
     text-decoration: none;
+ }
+
+ .menu__item{
+     font-weight: 650;
+     font-size: 14px;
  }
 
 
