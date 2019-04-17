@@ -7,7 +7,6 @@ import img_benefit_4 from '../../img/img_benefit_4.png';
 
 function Benefits(){
     return (
-        <div className='benefits_block'>
             <div className='benefits'>
                     <div className='benefits_item'>
                         <img src={img_benefit_1} alt='60-Day Trial'/>
@@ -41,9 +40,6 @@ function Benefits(){
                         </div>
                     </div>
             </div>
-            <div className='line'> 
-            </div>
-        </div>  
       );
 }
 export default Benefits;

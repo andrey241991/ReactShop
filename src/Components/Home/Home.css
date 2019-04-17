@@ -1,7 +1,3 @@
-/* .app_benefits{
-    margin-left: 80px;
-    margin-right: 80px;
-  } */
 
   .home{
     display: flex;
@@ -14,4 +10,17 @@
   .home_advertisement{
     width: 100%;
     height: 380px;
+  }
+
+  .home_wrapper{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .home_wrapper__benefits{
+    height: 94px;
+    border-bottom: 1px solid #E5E5E5;
   }
