@@ -1,0 +1,35 @@
+.slider-block{
+    background: #ff86;
+    height: 40px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-block__title{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;    
+}
+
+.slider-block__title p{
+    letter-spacing: 1.7px;
+    font-size: 38px;
+    font-weight: 650;
+    padding-left: 11px;
+}
+
+.slider-block__slider-pagination{
+    max-width: 210px;
+    display: flex;
+}
+
+
+.slider-pagination__see-all{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+    width: 89px;
+    color: #000000;
+}

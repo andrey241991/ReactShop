@@ -1,0 +1,34 @@
+.slider-pagination{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+
+}
+
+.slider-pagination__buttons{
+    width: 121px;
+    height: 32px;
+    border: 1px solid #056551;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+}
+
+.slider-pagination__button-left{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   height: 100%;
+   flex: 1;
+   border-right: 1px solid #046551;
+}
+
+.slider-pagination__button-right{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   height: 100%;
+   flex: 1;
+}
+
