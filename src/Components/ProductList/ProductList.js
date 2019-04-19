@@ -3,7 +3,7 @@ import './ProductList.css';
 import axios from 'axios';
 import ProductCard from '../ProductCard/ProductCard';
 
-const API = 'https://qa-api.wovenlyrugs.com/products?page=1&page_size=12&size=runners&group=Rug';
+const API = 'https://qa-api.wovenlyrugs.com/products?page=1&page_size=16&size=runners&group=Rug';
 
 class ProductList extends Component {
 

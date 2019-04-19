@@ -29,3 +29,4 @@ class ProductCard extends Component {
 
 export default ProductCard;
 
+// Scully Natural Stripe Gray / Beige Area Rug

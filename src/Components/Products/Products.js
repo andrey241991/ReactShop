@@ -12,7 +12,9 @@ class Products extends Component {
     return (
         <div className='products'>
             <div className='products_container'> 
+              <div className='products_container__banner'>
             <Banner/>
+              </div>
             <Filter/>
                 <div className='products_block'> 
                   <div className='products_block__below-filter'> 
