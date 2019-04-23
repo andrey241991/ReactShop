@@ -19,16 +19,7 @@
     width: 86px;
     background: #fff;
     color: #666666;
-    padding-left: 20px;
+
 }
 
 
-@media screen and (max-width: 1024px) {
-    .below_filter_block__rugs-quantity{
-        padding-left: 20px;
-    }
-
-    .below_filter_block__sort{
-        margin-right: 20px;
-    }
-}

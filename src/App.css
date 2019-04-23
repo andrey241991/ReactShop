@@ -15,6 +15,17 @@
   background: #F4F4F0;
 }
 
+.app-header{
+  height: 65px;
+}
+
+
+@media screen and (max-width: 376px) {
+.app-header{
+    height: 51px;
+  }
+
+}
 
 
 

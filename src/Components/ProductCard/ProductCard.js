@@ -8,10 +8,15 @@ class ProductCard extends Component {
     let title = item.title;
     let price = item.pricing.label;
     let imgUrl = item.mediaCollection[0].thumbUrl;
+
+    var divStyle = {
+      backgroundImage: 'url(' + imgUrl + ')'
+    }
+
     return (
       <section className='product-card'>
-        <div className='product-card_image-block'>
-          <img className='product-card_image-block__image' src={imgUrl} alt='carimat' />
+        <div className='product-card_image-block' >
+          <div className='product-card_image-block__image' style={divStyle} />
         </div>
         <div className='product-card_bottom-block'>
           <p className='product-card_bottom-block__title'>{title}</p>
@@ -29,4 +34,3 @@ class ProductCard extends Component {
 
 export default ProductCard;
 
-// Scully Natural Stripe Gray / Beige Area Rug

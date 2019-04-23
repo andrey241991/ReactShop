@@ -7,21 +7,19 @@
     display: flex;
     width: 100%;
     max-width: 1440px;
-
-
 }
 
 .banner_block__text{
     flex: 40%;
-   /* // width: 570px; */
     background: #fdaf17;
 }
 
 .banner_block__text h1{
-    line-height: 38px;
-    margin-top: 104px;
-    margin-left: 83px;
-    font-size: 44px;
+    margin-top: 98px;
+    margin-left: 80px;
+    font-size: 40px;
+    width: 40px;
+    line-height: 1;
     color: #000;
 }
 
@@ -31,8 +29,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-/* 
-
-    background-image: 
-    width: 873px; */
 }
+
+@media screen and (max-width: 767px) {
+    .banner{
+        width: 100%;
+        max-width: 776px;
+        display: flex;
+        height: 350px;
+    }
+
+    .banner_block{
+        display: flex;
+        width: 100%;
+        max-width: 776px;
+        flex-direction: column-reverse;
+    }
+
+    .banner_block__img{
+        flex: 54%;
+    }
+
+    .banner_block__text{
+        flex: 46%;
+        background: #fdaf17;
+    }
+    
+    .banner_block__text h1{
+        margin-top: 24px;
+        margin-left: 36px;
+        font-size: 24px;
+        width: 100%;
+    }
+  
+  }

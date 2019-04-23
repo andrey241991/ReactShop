@@ -9,7 +9,9 @@ const App = (props) =>{
   return (
     <Router>
       <div className="app">
-            <Header className="header"/>
+            <div className='app-header'>
+            <Header/>
+            </div>
             <div className='app-wrapper'>
               <Route exact path="/" component={Home} />
               <Route exact path = '/products' component={Products}/>
@@ -21,3 +23,4 @@ const App = (props) =>{
  
 export default App;
 
+  

@@ -1,0 +1,25 @@
+.mobile_filter{
+    background: #f4f5f0;
+    height: 51px;
+    width: 100%;
+    max-width: 767px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mobile_filter button{
+    height: 30px;
+     flex: 1;
+    background: #ffffff;
+    color: #046551;
+    font-size: 14px; 
+    font-weight: 550;
+    border-radius: 5px;
+    border: 1px solid #046551;
+    margin-right: 10px;
+}
+
+.mobile_filter button:first-child{
+    margin-left: 10px;
+}

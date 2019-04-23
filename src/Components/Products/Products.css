@@ -14,10 +14,10 @@
 }
 
 .products_block{
+    padding: 0 10px;
     height: 100%;
     max-width: 1280px;  
     margin: 0 auto;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +37,16 @@
     height:39px;
 }
 
+.products_container__filter{
+    max-width: 1440px;
+    width: 100%;
+}
+
+.products_container__mobile-filter{
+    max-width: 100%;  
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
 
     .products_container__banner{
@@ -45,9 +55,18 @@
   }
 
   @media screen and (max-width: 767px) {
-    body {
-      background-color: olive;
+  
+    .products_container__banner{
+        display: flex;
     }
-  }
 
+    .products_container__mobile-filter{
+        display: flex;
+    }
+
+    .products_container__filter{
+        display: none;
+    }
+
+  }
 
