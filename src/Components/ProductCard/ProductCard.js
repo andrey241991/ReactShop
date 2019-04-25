@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import './ProductCard.css';
+import './ProductCard.scss';
+
 
 class ProductCard extends Component {
 
   render() {
-    const { item } = this.props;
+    const {item, sliderTheme} = this.props;
     let title = item.title;
     let price = item.pricing.label;
     let imgUrl = item.mediaCollection[0].thumbUrl;
@@ -14,11 +15,13 @@ class ProductCard extends Component {
     }
 
     return (
-      <section className='product-card'>
-        <div className='product-card_image-block' >
+      <section className={`product-card ${sliderTheme}`}>
+        <div className={'product-card_image-block'}>
           <div className='product-card_image-block__image' style={divStyle} />
         </div>
         <div className='product-card_bottom-block'>
+          {/* <p className='product-card_bottom-block__title'>Scully Natural Stripe Gray / Beige Area Rug Area Rug
+</p> */}
           <p className='product-card_bottom-block__title'>{title}</p>
           <p className='product-card_bottom-block__price'>{price}</p>
           <div className='product-card_bottom-block_colors_block'>
@@ -26,11 +29,9 @@ class ProductCard extends Component {
             <div className='colorGreen'></div>
           </div>
         </div>
-
       </section>
     );
   }
 }
 
 export default ProductCard;
-

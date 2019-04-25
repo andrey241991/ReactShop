@@ -34,8 +34,8 @@
 
   .home_wrapper_popular{
     height: 392px;
+    width: 100%;
     max-width: 100%;
-    background: green;
   }
 
   .home_wrapper_shop-by-size{

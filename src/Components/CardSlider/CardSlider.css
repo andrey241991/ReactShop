@@ -1,0 +1,38 @@
+
+.wrapper{
+
+}
+
+.wrapperslider{
+  height: 60px;
+}
+
+.container{
+  margin: 0 -10px;
+}
+
+.productList__item.productList__item--small {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 332px;
+  padding-bottom: 0px;
+  width: 25%;
+}
+
+
+
+
+
+
+
+/* .productList__item {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 400px;
+  padding-bottom: 40px;
+  width: 25%;
+} */
+
+

@@ -35,6 +35,9 @@
 .product-card_bottom-block__title{
    padding-bottom: 10px;
     font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-card_bottom-block__price{
@@ -86,7 +89,6 @@
 
     .product-card_bottom-block__title{
         padding-bottom: 0px;
-
      }
 
      .product-card_bottom-block__price{
@@ -112,6 +114,56 @@
         width: 10px;
         height: 10px;
     }
-
 }
+
+
+/* IT IS THEME FOR POPULAR SLIDER*/
+.product-card.popular{
+
+    .product-card_image-block{
+        height: 162.8px;   
+    }
+
+    .product-card_bottom-block{
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+
+    .product-card_bottom-block__title{
+        padding-bottom: 10px;
+        height: 60px;
+        overflow: hidden;
+     }
+
+     .product-card_bottom-block__price{
+        padding-bottom:  27px;
+   }
+
+   .product-card_bottom-block_colors_block{
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 9px;
+    }   
+    
+    .colorRed{
+        margin-right: 5px;
+        border-radius: 50%;
+        background: red;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .colorGreen{
+        border-radius: 50%;
+        background: black;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+
+ 
+ 
+
     

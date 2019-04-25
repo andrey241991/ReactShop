@@ -3,15 +3,15 @@ import './SliderBlock.css';
 import SliderPagination from '../SliderPagination/SliderPagination';
 import SliderPaginationText from '../SliderPaginationText/SliderPaginationText';
 
-const SliderBlock = () => {
+const SliderBlock = (props) => {
     return (
         <section className="slider-block">
                  <div className="slider-block__title">
-                    <p>Shop By Size</p>
+                    <p>{props.sliderTitle}</p>
                 </div>
                 <div className="slider-block__slider-pagination">
                      <SliderPaginationText/>
-                     <SliderPagination/>
+                     <SliderPagination fromParentOnNextClick={props.fromParentOnNextClick} fromParentOnPrevClick={props.fromParentOnPrevClick}/>
                 </div>
            
         </section>
