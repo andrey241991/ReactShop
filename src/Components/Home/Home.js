@@ -33,7 +33,7 @@ class Home extends Component {
           <div className='home_wrapper_new'>
           <CardSlider
             sliderTitle={'New'}
-            slidesCounts={[6,4,2]}
+            slidesCounts={[3,3,2]}
             sliderTheme={'new'}
             />
           </div>

@@ -248,6 +248,38 @@
         width: 27px;
         height: 27px;
     }
+
+
+    @media screen and (max-width: 1100px) {
+        .product-card_image-block{
+             height: 252px;   
+             padding-bottom: 14px;
+        }
+
+        .product-card_bottom-block{
+             height: 178px;  
+        }
+
+        .product-card  {
+            box-sizing: content-box;
+        }
+
+        .product-card_bottom-block__price{
+            padding-bottom: 50px;
+            padding-left: 20px;
+       }
+
+       .product-card_bottom-block__title{
+        padding-left: 20px;
+       }
+        
+    }
+
+    @media screen and (max-width: 767px) {
+    
+    }
+
+
 }
 
  
