@@ -67,4 +67,21 @@
 
 
   
+  @media screen and (max-width: 1100px) {
+
+    .home_wrapper{
+      max-width: 960px;
+    }
+
+    .home_wrapper_popular{
+      height: 420px;
+    }
+
+  }
+  
+
+
+
+
+  
 

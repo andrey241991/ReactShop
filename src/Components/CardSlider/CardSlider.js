@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import SliderBlock from '../SliderBlock/SliderBlock';
 import axios from 'axios';
 import ProductCard from '../ProductCard/ProductCard';
+import SliderPagination from '../SliderPagination/SliderPagination';
+import SliderPaginationText from '../SliderPaginationText/SliderPaginationText';
 
 const API = 'https://qa-api.wovenlyrugs.com/products?page=1&page_size=16&size=runners&group=Rug';
 
@@ -33,13 +35,28 @@ class CardSlider extends React.Component {
 
     render() {
         const { data } = this.state;
-        const {sliderTitle, slidesCount, sliderTheme} = this.props;
+        const { sliderTitle, slidesCounts, sliderTheme } = this.props;
         var settings = {
             infinite: true,
             speed: 500,
-            arrows: true,
-            slidesToShow: slidesCount,
-            slidesToScroll: 1
+            arrows: false,
+            slidesToShow: slidesCounts[0],
+            slidesToScroll: 1,
+
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: slidesCounts[1]
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: slidesCounts[2]
+                    }
+                }
+            ]
         };
         return (
             <div className='wrapper'>
@@ -55,7 +72,8 @@ class CardSlider extends React.Component {
                     <Slider ref={slider => (this.slider = slider)} {...settings}>
                         {data.map(item => {
                             return (
-                                <div className="productList__item productList__item--new"> 
+                                <div className="productList__item--slider">
+                                    {/* <div className="productList__item productList__item--new"> */}
                                     <ProductCard
                                         item={item}
                                         sliderTheme={sliderTheme}
@@ -65,11 +83,19 @@ class CardSlider extends React.Component {
                         })}
                     </Slider>
                 </div>
+                <div className='wrapperslider--mobile'>
+                    <SliderPagination fromParentOnNextClick={this.onNextClick} fromParentOnPrevClick={this.onPrevClick} />
+                    <SliderPaginationText />
+                </div>
             </div>
         );
     }
 }
 
 export default CardSlider;
+
+
+// <SliderPaginationText/>
+// <SliderPagination fromParentOnNextClick={props.fromParentOnNextClick} fromParentOnPrevClick={props.fromParentOnPrevClick}/>
 
 

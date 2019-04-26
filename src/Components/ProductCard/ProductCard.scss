@@ -159,13 +159,46 @@
         width: 10px;
         height: 10px;
     }
+
+    @media screen and (max-width: 1100px) {
+        .product-card_image-block{
+            height: 184.87px;   
+            padding-bottom: 13px;
+        }
+
+        .product-card_bottom-block{
+            height: 139.13px;  
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .product-card_image-block{
+            height: 138.87px; 
+            padding-bottom: 18px;
+        }
+
+        .product-card_bottom-block{
+            box-sizing:content-box; 
+            height: 87.13px;
+            font-size: 14px;
+        }
+    
+        .product-card_bottom-block__title{
+            padding-bottom: 24px;
+            height: 20px;
+            overflow: hidden;
+         }
+
+         .product-card_bottom-block__price{
+            padding-bottom: 33px;
+       }
+    }
 }
 
 
 /* IT IS THEME FOR NEW SLIDER*/
 .product-card.new{
     padding: 0px;
-
   
     .product-card_image-block{
         height: 338.75px; 

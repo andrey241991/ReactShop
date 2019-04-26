@@ -33,3 +33,10 @@
     width: 89px;
     color: #000000;
 }
+
+@media screen and (max-width: 767px) {
+    .slider-block__slider-pagination{
+        display: none; 
+    }
+
+}
