@@ -162,8 +162,61 @@
 }
 
 
+/* IT IS THEME FOR NEW SLIDER*/
+.product-card.new{
+    padding: 0px;
 
- 
+  
+    .product-card_image-block{
+        height: 338.75px; 
+        padding-bottom: 22px;  
+    }
+
+    .product-card_image-block__image{
+        background-size: cover;
+    }
+
+    .product-card_bottom-block{
+        height: 178.25px;   
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+
+    .product-card_bottom-block__title{
+        padding-bottom: 10px;
+        height: 40px;
+        overflow: hidden;
+        padding-left: 27px;
+     }
+
+     .product-card_bottom-block__price{
+        padding-bottom: 46px;
+        padding-left: 27px;
+   }
+
+   .product-card_bottom-block_colors_block{
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 9px;
+    padding-left: 27px;
+    }   
+    
+    .colorRed{
+        margin-right: 13.5px;
+        border-radius: 50%;
+        background: red;
+        width: 27px;
+        height: 27px;
+    }
+    
+    .colorGreen{
+        border-radius: 50%;
+        background: black;
+        width: 27px;
+        height: 27px;
+    }
+}
+
  
 
     

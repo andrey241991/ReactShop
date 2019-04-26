@@ -20,6 +20,15 @@
   width: 25%;
 }
 
+.productList__item.productList__item--new { 
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 542px;
+  padding-bottom: 0px;
+  width: 25%;
+}
+/* МОЖЕТ ВОБЩЕ СДЕЛАТЬ ОДНУ НА ВСЕХ И НЕ ПАРИТСЯ, НЕ МЕНЯТЬ ДЛЯ КАЖДОГО СЛАЙДЕРА И */
 
 
 

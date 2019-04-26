@@ -34,7 +34,10 @@ class Home extends Component {
           <CardSlider
             sliderTitle={'New'}
             slidesCount={3}
+            sliderTheme={'new'}
             />
+          </div>
+          <div className='home_living_room_rugs'>
           </div>
         </div>
       </div>

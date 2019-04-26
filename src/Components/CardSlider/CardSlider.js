@@ -55,7 +55,7 @@ class CardSlider extends React.Component {
                     <Slider ref={slider => (this.slider = slider)} {...settings}>
                         {data.map(item => {
                             return (
-                                <div className="productList__item productList__item--small">
+                                <div className="productList__item productList__item--new"> 
                                     <ProductCard
                                         item={item}
                                         sliderTheme={sliderTheme}
