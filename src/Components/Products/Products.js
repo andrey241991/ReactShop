@@ -6,10 +6,55 @@ import Filter from '../Filter/Filter';
 import BelowFilter from '../BelowFilter/BelowFilter';
 import Pagination from '../Pagination/Pagination';
 import MobileFilter from '../MobileFilter/MobileFilter';
+import axios from 'axios';
+
+const API = 'https://qa-api.wovenlyrugs.com/products?page=1&page_size=16&size=runners&group=Rug';
+
 
 class Products extends Component {
 
+  state = {
+    data: [],
+    totalPagesCount: '',
+    currentPage: 1,
+    cardPerPage: 16
+  };
+
+  componentDidMount() {
+    axios.get(API)
+      .then(res => {
+        this.setState({
+          data: res.data.result.data
+        })
+        this.setPageCount(res.data.result.total_count);
+      })
+  }
+
+  setPageCount = (totalCount) => {
+    const { cardPerPage } = this.state;
+    this.setState({
+      totalPagesCount: Math.round(totalCount / cardPerPage)
+    })
+  }
+
+  onClickNext = () => {
+    let {currentPage} = this.state;
+    this.setState({
+      currentPage: currentPage ++
+    })
+  }
+
+  onClickNext = () => {
+    let {currentPage} = this.state;
+    this.setState({
+      currentPage: currentPage ++
+    })
+  }
+
+
   render() {
+    const { data, totalPagesCount, currentPage } = this.state;
+    // console.log('totalPagesCount in render' + totalPagesCount);
     return (
       <div className='products'>
         <div className='products_container'>
@@ -26,9 +71,14 @@ class Products extends Component {
             <div className='products_block__below-filter'>
               <BelowFilter />
             </div>
-            <ProductList />
+            <ProductList data={data} />
             <div className='products_pagination'>
-              <Pagination />
+              <Pagination 
+                currentPage={currentPage} 
+                totalPagesCount={totalPagesCount} 
+                fromParentOnClickNext={this.onClickNext()}
+                fromParentOnClickNext={this.onClickPrev()} 
+              />
             </div>
           </div>
         </div>
@@ -38,9 +88,3 @@ class Products extends Component {
 }
 
 export default Products;
-
-
-
-// <div className='products_container__mobile-filter'>
-// <MobileFilter/>
-// </div>
