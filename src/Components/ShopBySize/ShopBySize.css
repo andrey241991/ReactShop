@@ -1,0 +1,131 @@
+.shop-by-size{
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-by-size_top{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 39px;
+    padding-bottom: 30px;
+}
+
+.shop-by-size_top__title{
+    letter-spacing: 1.7px;
+    font-size: 38px;
+    font-weight: 650;
+}
+
+.shop-by-size_top__guide{
+    color: #056551;
+    font-size: 16px;
+}
+
+.shop-by-size__content-block{
+    padding-left: 69px;
+    padding-right: 37px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.content-block__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-block__item img{
+    flex: 1;
+    width: 197px;
+    height: 197px;
+    padding-bottom: 16px;
+}
+
+.content-block__item p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.shop-by-size_mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .shop-by-size_mobile{
+        display: flex;
+        width: 89px;
+        height: 28px;
+    }
+
+    .shop-by-size_mobile__guide{
+        color: #056551;
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 650;
+        margin-bottom: 12px;
+        padding-left: 14px;
+    }
+
+    .shop-by-size_top__title{
+        
+        /* font-family: Graphik; */
+        font-size: 24px;
+        line-height: 26px;
+        color: #000000;
+        padding-left: 12px;
+    }
+
+    /* .shop-by-size__content-block:nth-child(3){
+         display: none;   
+    } */
+
+    .item--hide{
+        display: none;   
+    }
+
+    .content-block__item img{
+        flex: 1;
+        width: 120px;
+        height: 120px;
+        padding-bottom: 5px;
+    }
+
+    .shop-by-size__content-block{
+        padding-left: 69px;
+        padding-right: 37px;
+        height: 100%;
+        display: flex;
+        justify-content: space-around; 
+        align-items: flex-start;
+    }
+
+    .shop-by-size_top__guide{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .shop-by-size_top{
+        padding-bottom: 7px;
+    }
+
+    .shop-by-size__content-block{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+

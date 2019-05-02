@@ -1,0 +1,145 @@
+.advertisement {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .advertisement__premium {
+    background: #F4F4F0;
+    flex: 34.4%;
+    padding-top: 50px;
+    padding-left: 81px;
+  }
+  
+  .advertisement__premium_block {
+    max-width: 412px;
+    height: 294px;
+  }
+  
+  .advertisement__img {
+    flex: 60.6%;
+    background-image:  url('../../img/img_intro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .premium_block__p1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    color: #056551;
+    padding-bottom: 11px;
+  }
+  
+  .premium_block__p2{
+    line-height: 24px;
+    font-size: 18px;
+    color: #666666;
+    padding-bottom: 15px;
+  }
+
+  .premium_block__button{
+    width: 163px;
+    height: 50px;  
+  }
+
+  .premium_block__button--mobile{
+    width: 111px;
+    height: 40px;  
+  }
+
+  .premium_block__p2--tablet{
+    display: none;
+    color:#666666; 
+    width: 200px;
+    padding-bottom: 22px;
+  }
+
+ .premium_block__button--mobile{
+   display: none;
+ }
+
+  @media screen and (max-width: 1100px) {
+
+    .advertisement__premium {
+      flex: 32.4%;
+      padding-top: 45px;
+      padding-left: 69px;
+    }
+
+    .premium_block__p1{
+      width: 300px;
+      line-height: 44px;
+      font-size: 40px;
+    }
+    
+    .premium_block__p2{
+      display: none;
+    }
+
+    .premium_block__p2--tablet{
+      display: block;
+    }   
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+
+   .advertisement{
+     display: flex;
+     flex-direction: column;
+   }
+
+   .advertisement__premium {
+    flex: 51%;
+    padding-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .advertisement__img {
+    flex: 49%;
+   }
+
+   .advertisement__premium_block {
+    max-width: 295px;
+    height: 147px;
+  }
+
+  .premium_block__p1{
+    /* font-family: Graphik; */
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 7px;
+  }
+
+  .premium_block__p2--tablet{
+    /* font-family: Graphik; */
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 8px;
+    width: 260px;
+  }
+
+  .premium_block__button{
+    width: 111px;
+    height: 40px;
+  }
+
+  .premium_block__button--mobile{
+    display:flex;
+  }
+
+  .premium_block__button{
+    display:none;
+  }
+  
+  }
+
+ 
+ 
+  

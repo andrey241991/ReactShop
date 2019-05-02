@@ -1,0 +1,23 @@
+.slider-pagination_wrapper{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.slider-pagination__text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+    width: 89px;
+    color: #000000;
+}
+
+.slider-pagination__text a{
+    align-self: center;
+    text-decoration: none;
+    color: #056551;
+    font-weight: 650;
+    font-size: 14px;
+}

@@ -1,0 +1,44 @@
+.pagination{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #046551;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagination__prev{
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    border-right: 1px solid #046551;
+    flex: 1;
+    align-items: center
+}
+
+.pagination__prev img{
+ 
+}
+
+.pagination__center{
+    letter-spacing: 2px;
+    font-size: 12px;
+    justify-content: center;
+    display: flex;
+    font-weight: 500;
+    color: #046551;
+    flex: 2.7;
+}
+
+.pagination__next{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    border-left: 1px solid #046551;
+    flex: 1;
+}
+
+
