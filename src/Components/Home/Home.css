@@ -23,7 +23,8 @@
   .home_wrapper__benefits{
     height: 94px;
     border-bottom: 1px solid #E5E5E5;
-    margin-bottom: 40px;
+    display: flex;
+
   }
 
   .home_wrapper_popular__slider-pagination{
@@ -36,13 +37,13 @@
     height: 392px;
     width: 100%;
     max-width: 100%;
+   padding-bottom: 43px; 
+   padding-top: 40px;
   }
 
   .home_wrapper_shop-by-size{
-    margin-top: 43px;
     height: 304px;
     max-width: 100%;
-    background: orange;
   }
 
   .home_wrapper_discover-your-style{
@@ -65,9 +66,12 @@
     height: 497px;
   }
 
-
   
   @media screen and (max-width: 1100px) {
+
+    .home_advertisement{
+      height: 380px;
+    }
 
     .home_wrapper{
       max-width: 960px;
@@ -75,12 +79,51 @@
 
     .home_wrapper_popular{
       height: 420px;
+      padding-top: 38px;
+      padding-bottom: 45px;
     }
 
+    .home_wrapper_discover-your-style{
+      margin-top: 23px;
+      height: 419px;
+    }
+
+    .home_wrapper_new{
+      margin-top: 39px;
+      height: 602px;
+    }
+  
+   
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .home_advertisement{
+      height: 434px;
+      padding-bottom: 40px;
+    }
+
+    .home_wrapper__benefits{
+      height: 229px;
+      border-bottom: 1px solid #E5E5E5;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .home_wrapper_popular{
+     padding-top: 19px; 
+    }
+
+    .home_wrapper_shop-by-size{
+      height: 237px;
+    }
+
+    .home_wrapper_new{
+      margin-top: 21px;
+    }
+  
   }
   
-
-
 
 
   

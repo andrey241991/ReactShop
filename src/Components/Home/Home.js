@@ -28,7 +28,7 @@ class Home extends Component {
             <ShopBySize />
           </div>
           <div className='home_wrapper_discover-your-style'>
-            <SliderBlock />
+      
           </div>
           <div className='home_wrapper_new'>
           <CardSlider

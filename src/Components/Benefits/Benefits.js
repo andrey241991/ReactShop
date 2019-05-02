@@ -32,7 +32,7 @@ function Benefits(){
                         </div>
                     </div>
 
-                    <div className='benefits_item'>
+                    <div className='benefits_item benefits_item--hide'>
                         <img src={img_benefit_4} alt='Message Us or Call Us'/>
                         <div className='benefits_item_description'>
                             <p>Message Us or</p>

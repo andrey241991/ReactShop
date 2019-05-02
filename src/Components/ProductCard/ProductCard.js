@@ -20,8 +20,6 @@ class ProductCard extends Component {
           <div className='product-card_image-block__image' style={divStyle} />
         </div>
         <div className='product-card_bottom-block'>
-          {/* <p className='product-card_bottom-block__title'>Scully Natural Stripe Gray / Beige Area Rug Area Rug
-</p> */}
           <p className='product-card_bottom-block__title'>{title}</p>
           <p className='product-card_bottom-block__price'>{price}</p>
           <div className='product-card_bottom-block_colors_block'>
