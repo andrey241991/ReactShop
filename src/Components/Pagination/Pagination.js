@@ -3,16 +3,18 @@ import './Pagination.css';
 import img_left from '../../img/img_left.png';
 import img_right from '../../img/img_right.png';
 
-function Pagination(props) {
+
+const Pagination = (props) => {
+  const {fromParentOnClickNext, fromParentOnClickPrev, currentPage, totalPagesCount} = props;
   return (
     <div className="pagination">
-      <div className="pagination__prev" onClick={props.fromParentOnClickNext()}>
+      <div className="pagination__prev"  onClick={fromParentOnClickPrev}>
         <img src={img_left} />
       </div>
       <div className="pagination__center">
-      PAGE {props.currentPage} OF {props.totalPagesCount}
+      PAGE {currentPage} OF {totalPagesCount}
       </div>
-      <div className="pagination__next">
+      <div className="pagination__next" onClick={fromParentOnClickNext}>
         <img src={img_right} />
       </div>
     </div>

@@ -6,13 +6,11 @@ import Filter from '../Filter/Filter';
 import BelowFilter from '../BelowFilter/BelowFilter';
 import Pagination from '../Pagination/Pagination';
 import MobileFilter from '../MobileFilter/MobileFilter';
-import axios from 'axios';
-
-const API = 'https://qa-api.wovenlyrugs.com/products?page=1&page_size=16&size=runners&group=Rug';
+import { getProducts } from '../../utils/ApiHelper'
+import { getPageCount } from '../../utils/ApiHelper'
 
 
 class Products extends Component {
-
   state = {
     data: [],
     totalPagesCount: '',
@@ -20,14 +18,36 @@ class Products extends Component {
     cardPerPage: 16
   };
 
-  componentDidMount() {
-    axios.get(API)
+  getDataFromApi = (params) => {
+    getProducts(params)
       .then(res => {
         this.setState({
-          data: res.data.result.data
+          data: res
         })
-        this.setPageCount(res.data.result.total_count);
+      }).catch(error => {
+        console.log('error in getProducts = ' + error);
+      });
+  }
+
+  componentDidMount() {
+    getProducts({
+      page: 1,
+      size: 16,
+      page_size: 'runners',
+      group: 'Rug'
+    }).then(res => {
+      this.setState({
+        data: res
       })
+    }).catch(error => {
+      console.log('error in getProducts = ' + error);
+    });
+
+    getPageCount().then(res => {
+      this.setPageCount(res);
+    }).catch(error => {
+      console.log('error in getPageCount = ' + error);
+    });
   }
 
   setPageCount = (totalCount) => {
@@ -38,23 +58,37 @@ class Products extends Component {
   }
 
   onClickNext = () => {
-    let {currentPage} = this.state;
-    this.setState({
-      currentPage: currentPage ++
-    })
+    let { totalPagesCount, currentPage } = this.state;
+    if (currentPage !== totalPagesCount) {
+      currentPage++
+      this.setState({ currentPage: currentPage });
+      this.getDataFromApi({
+        page: currentPage,
+        size: 16,
+        page_size: 'runners',
+        group: 'Rug'
+      });
+    };
   }
 
-  onClickNext = () => {
-    let {currentPage} = this.state;
-    this.setState({
-      currentPage: currentPage ++
-    })
+  onClickPrev = () => {
+    let { currentPage } = this.state;
+    if (currentPage !== 1) {
+      currentPage--;
+      this.setState({ currentPage: currentPage });
+      this.getDataFromApi({
+        page: currentPage,
+        size: 16,
+        page_size: 'runners',
+        group: 'Rug'
+      });
+    }
   }
 
 
   render() {
     const { data, totalPagesCount, currentPage } = this.state;
-    // console.log('totalPagesCount in render' + totalPagesCount);
+    const { generateUrl } = this.props;
     return (
       <div className='products'>
         <div className='products_container'>
@@ -73,11 +107,12 @@ class Products extends Component {
             </div>
             <ProductList data={data} />
             <div className='products_pagination'>
-              <Pagination 
-                currentPage={currentPage} 
-                totalPagesCount={totalPagesCount} 
-                fromParentOnClickNext={this.onClickNext()}
-                fromParentOnClickNext={this.onClickPrev()} 
+              <Pagination
+                generateUrl={generateUrl}
+                currentPage={currentPage}
+                totalPagesCount={totalPagesCount}
+                fromParentOnClickNext={this.onClickNext}
+                fromParentOnClickPrev={this.onClickPrev}
               />
             </div>
           </div>
@@ -86,5 +121,6 @@ class Products extends Component {
     );
   }
 }
+
 
 export default Products;
