@@ -1,0 +1,45 @@
+.color_block__container{
+    border-radius: 50%;
+    border: 2px solid transparent;
+    padding: 3px;
+    /* // посмотреть на диспелй флекс
+    //попробовать line-height
+    //align-items */
+}
+
+.color_block__container:hover{
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    padding: 3px;
+    /* // посмотреть на диспелй флекс
+    //попробовать line-height
+    //align-items */
+}
+
+
+.color_block__item{
+    border-radius: 50%;
+    background: black;
+    width: 19.9px;
+    height: 19.9px;
+}
+
+
+.color_block__container--active{
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+/* // .color_block__container :hover {
+//     border-radius: 50%;
+//     border: 2px solid grey;
+//     padding: 3px;
+// }
+
+// .color_block__item :hover {
+//     border-radius: 50%;
+//     background: black;
+//     width: 19.9px;
+//     height: 19.9px;
+// } */
