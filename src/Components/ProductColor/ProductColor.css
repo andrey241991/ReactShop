@@ -11,11 +11,7 @@
     border-radius: 50%;
     border: 2px solid lightgray;
     padding: 3px;
-    /* // посмотреть на диспелй флекс
-    //попробовать line-height
-    //align-items */
 }
-
 
 .color_block__item{
     border-radius: 50%;
@@ -31,15 +27,33 @@
     padding: 3px;
 }
 
-/* // .color_block__container :hover {
-//     border-radius: 50%;
-//     border: 2px solid grey;
-//     padding: 3px;
-// }
+@media screen and (max-width: 1024px) {
+}
 
-// .color_block__item :hover {
-//     border-radius: 50%;
-//     background: black;
-//     width: 19.9px;
-//     height: 19.9px;
-// } */
+@media screen and (max-width: 767px) {
+    .color_block__item{
+        border-radius: 50%;
+        background: black;
+        width: 10px;
+        height: 10px;
+    }
+
+    .color_block__container{
+        border-radius: 50%;
+        border: 1px solid transparent;
+        padding: 1px;
+    }
+
+    .color_block__container--active{
+        border-radius: 50%;
+        border: 1px solid black;
+        padding: 1px;
+    }
+
+    .color_block__container:hover{
+        border-radius: 50%;
+        border: 1px solid lightgray;
+        padding: 1px;
+    }
+    
+}

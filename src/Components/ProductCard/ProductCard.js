@@ -16,6 +16,14 @@ class ProductCard extends Component {
     })
   }
 
+  getColorsArray = (item) => {
+    let colorsArray = [];
+    for (let i = 0; i < item.properties[1].options.length; i++) {
+      colorsArray.push(item.properties[1].options[i].title)
+    }
+    return colorsArray;
+  }
+
   render() {
     const { item, sliderTheme } = this.props;
     const { colorCheckedName } = this.state;
@@ -27,13 +35,14 @@ class ProductCard extends Component {
       backgroundImage: 'url(' + imgUrl + ')'
     }
 
-    let testArray = ['red', 'green', 'violet'];
-    let productColors = testArray.map(item => {
+    let colorsArray = this.getColorsArray(item);
+    let productColors = colorsArray.map(item => {
       return <ProductColor
         colorName={item}
         colorChecked={item === colorCheckedName ? true : false}
         fromParentOnColorClick={this.onColorClick} />
     })
+
     return (
       <section className={`product-card ${sliderTheme}`}>
         <div className={'product-card_image-block'}>
