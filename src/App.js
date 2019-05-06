@@ -4,9 +4,11 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Products from "./Components/Products/Products";
 import { BrowserRouter as Router, Route} from "react-router-dom";
+// import {generateUrl} from "./utils/ApiHelper"
 
 
-const App = (props) =>{
+const App = () =>{
+  const productsComponent = () => <Products/>;
   return (
     <Router>
       <div className="app">
@@ -15,7 +17,7 @@ const App = (props) =>{
             </div>
             <div className='app-wrapper'>
               <Route exact path="/" component={Home} />
-              <Route exact path = '/products' component={Products}/>
+              <Route exact path = '/products' component={productsComponent}/>
             </div>
       </div>
     </Router>
