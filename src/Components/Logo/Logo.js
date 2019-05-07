@@ -3,9 +3,9 @@ import './Logo.css';
 
 function Logo(){
     return (
-        <div className="logo">
+        <section className="logo">
             <h2 className="logo_title">Wovenly</h2>
-        </div>
+        </section>
       );
 }
 

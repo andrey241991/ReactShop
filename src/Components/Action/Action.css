@@ -2,30 +2,18 @@
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
- .action__item_chat{
+.action_container{
     height: 100%;
-     width: 100%;
-     flex: 1;
-     border-right: 1px solid #B2B2B2;
-     display: flex;
-     align-items: center;
-     justify-items: center;
-
- }
-
- .action__item_chat img{
-     padding-left: 10px;
- 
- }
-
- .action__item_cart{
+    display: flex;
     flex: 1;
- }
+    align-items: center;
+    justify-content: center;
+}
 
- .action__item_cart img{
-    padding-left: 10px;
- }
+.action_container--border{
+    border-right: 1px solid #B2B2B2; 
+}
