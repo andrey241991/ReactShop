@@ -22,24 +22,27 @@
     font-family:"graphikregular";
     display: flex;
     flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .header_navigation{
     height: 100%;
-    max-width: 660px;
-    /* width: 660px; */
+    /* max-width: 660px; */
+    width: 660px;
     display: flex;
 }
 
 .header_navigation_menu{
     box-sizing: border-box;
-    width: 530px;
+    /* width: 530px; */
+    width: 80.30%;
     display: flex;
     border-right: 1px solid #B2B2B2;
     border-left: 1px solid #B2B2B2;
 }
 
 .header_navigation_action{
-    width: 130px;
+    /* width: 130px; */
+    width: 19.70%;
     display: flex;
 }
