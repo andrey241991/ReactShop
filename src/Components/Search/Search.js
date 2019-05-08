@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Search.css';
 import icon_search from './img/icon_search.png'; 
 
-
 function Search(){
     return (
         <section className='search'>

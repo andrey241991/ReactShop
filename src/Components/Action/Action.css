@@ -17,3 +17,15 @@
 .action_container--border{
     border-right: 1px solid #B2B2B2; 
 }
+
+@media screen and (max-width: 767px) {
+    .action{
+        border-right: 1px solid #B2B2B2;
+        border-left: 1px solid #B2B2B2;
+    }
+
+    .action_container--border{
+        border-right: 1px solid #B2B2B2; 
+        border-left: 1px solid #B2B2B2; 
+    }
+}
